@@ -3,3 +3,23 @@
 * Override Pages default styles or create your own styles here
 
 */
+.uploadButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #6d5cae;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Tahoma;
+  text-align: center;
+  cursor: pointer;
+  border: 1px dashed #999999;
+}
+.uploadButton:hover {
+  color: #8a7dbe;
+  background-color: rgba(230, 230, 230, 0.7);
+}
+.upload-logo {
+  width: 40%;
+  margin: 0 auto;
+}
