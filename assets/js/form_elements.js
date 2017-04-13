@@ -14,6 +14,18 @@
 
     $(document).ready(function() {
 
+        //Date Pickers
+        //$('#datepicker-range, #datepicker-component, #datepicker-component2').datepicker({
+        //    format: 'MM/DD/YYYY h:mm A',
+        //});
+
+        $('#daterangepicker').daterangepicker({
+            timePicker: true,
+            timePickerIncrement: 30,
+            format: 'MM/DD/YYYY h:mm A'
+        }, function(start, end, label) {
+            console.log(start.toISOString(), end.toISOString(), label);
+        });
 
         // disabling dates
         var nowTemp = new Date();

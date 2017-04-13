@@ -5,9 +5,8 @@
 */
 
 .uploadButton {
-  display: block;
-  width: 100%;
-  padding: 10px;
+  display: table-cell;
+  vertical-align: middle;
   color: #6d5cae;
   font-size: 40px;
   font-weight: bold;
@@ -15,6 +14,15 @@
   text-align: center;
   cursor: pointer;
   border: 1px dashed #999999;
+  width: 177px;
+  height: 178px;
+  > p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  > img {
+    width: 100%;
+  }
 }
 .uploadButton:hover {
   color: #8a7dbe;
@@ -22,6 +30,31 @@
 }
 
 .upload-logo {
-  width: 40%;
+  width: 177px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.row-my {
+  .col-5 {
+    width: 20%;
+    float: left;
+  }
+}
+.upload-img {
+  .upload-img-button {
+    cursor: pointer;
+    border: 1px dashed #999999;
+    width: 100%;
+    height: 100%;
+    > img {
+      width: 100%;
+    }
+  }
+  label[for="add-img"] {
+    opacity: 0.8;
+  }
+  label[for="add-img"]:hover {
+    opacity: 1;
+  }
 }

@@ -74,11 +74,11 @@
                 </a>
                 <span class="icon-thumbnail "><i class="fa fa-gear"></i></span>
                 <ul class="sub-menu">
-                    <li class="active">
+                    <li>
                         <a href="index.html">Shopper Managment</a>
                     </li>
-                    <li>
-                        <a href="product_management-home.html">Product Managment</a>
+                    <li class="active">
+                        <a href="coupon_management-home.html">Product Managment</a>
                     </li>
                     <li>
                         <a href="coupon_management-home.html">Coupon Managment</a>
@@ -112,14 +112,14 @@
             <div class="jumbotron" data-pages="parallax">
                 <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
                     <div class="inner">
-                        <h3 class="page-title">Shopper Managment</h3>
+                        <h3 class="page-title">Product Managment</h3>
                         <!-- START BREADCRUMB -->
                         <ul class="breadcrumb">
                             <li>
-                                <a href="index.html">Shopper Managment</a>
+                                <a href="product_management-home.html">Product Managment</a>
                             </li>
                             <li>
-                                Add Shopper
+                                Add Product
                             </li>
                         </ul>
                         <!-- END BREADCRUMB -->
@@ -146,69 +146,29 @@
                                     </div>
                                     <div class="form-group form-group-default required">
                                         <label>Name</label>
-                                        <input type="text" class="form-control" required="true" placeholder="Business Name">
+                                        <input type="text" class="form-control" required="true" placeholder="Product Name">
                                     </div>
                                     <div class="form-group form-group-default required">
-                                        <label>Telephone</label>
-                                        <input type="text" id="phone" class="form-control" placeholder="Business Tel Number">
+                                        <label>Belong to shopper ID</label>
+                                        <input type="text" class="form-control" required="true" placeholder="Shopper ID">
                                     </div>
                                     <div class="form-group form-group-default required">
-                                        <label>Email</label>
-                                        <input type="email" class="form-control" placeholder="Business Email" required="">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Website</label>
-                                        <input type="text" class="form-control" placeholder="Business Website" required="">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Address</label>
-                                        <input type="text" class="form-control" placeholder="Business Address" required="">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>City</label>
-                                        <input type="text" class="form-control" placeholder="City" required="">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Province</label>
-                                        <input type="text" class="form-control" placeholder="Province" required="">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Country</label>
-                                        <input class="typeahead form-control sample-typehead" type="text" placeholder="Country">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Post Code</label>
-                                        <input type="text" class="form-control" placeholder="Post Code" required="">
+                                        <label>Price</label>
+                                        <input type="text" class="form-control" required="true" placeholder="$">
                                     </div>
                                     <div class="form-group form-group-default required">
                                         <label>Description</label>
-                                        <textarea style="width: 100%; border-color: #f3f3f3" rows="5" placeholder="Business description"></textarea>
+                                        <textarea style="width: 100%; border-color: #f3f3f3" rows="5" placeholder="Product description"></textarea>
                                     </div>
                                     <div class="form-group form-group-default required">
-                                        <label>Contact Person</label>
-                                        <input type="text" class="form-control" required="true" placeholder="First Name Last Name">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Contact Person Title</label>
-                                        <input type="text" class="form-control" required="true" placeholder="Title">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Contact Person Tel</label>
-                                        <input type="text" id="phone" class="form-control" placeholder="Contact Tel">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Contact Person Email</label>
-                                        <input type="email" class="form-control" placeholder="Contact Email" required="">
-                                    </div>
-                                    <div class="form-group form-group-default required">
-                                        <label>Shopper Status</label>
+                                        <label>Product Status</label>
                                         <select>
                                             <option value="sightseeing">Available</option>
                                             <option value="business">Not Available</option>
                                         </select>
                                     </div>
                                     <div class="text-right">
-                                        <button class="btn btn-primary btn-cons">+ Add Shopper</button>
+                                        <button class="btn btn-primary btn-cons">+ Add Product</button>
                                     </div>
                                 </form>
                             </div>
