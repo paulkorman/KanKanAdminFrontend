@@ -82,10 +82,10 @@
                         <li>
                             <a href="product_management-home.html">Product Managment</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="coupon_management-home.html">Coupon Managment</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="sponsor_management-home.html">Sponsor Managment</a>
                         </li>
                     </ul>
@@ -317,14 +317,14 @@
                 <div class="jumbotron" data-pages="parallax">
                     <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
                         <div class="inner">
-                            <h3 class="page-title">Coupon Managment</h3>
+                            <h3 class="page-title">Sponsor Managment</h3>
                             <!-- START BREADCRUMB -->
                             <ul class="breadcrumb">
                                 <li>
-                                    <a href="coupon_management-home.html">Coupon Managment</a>
+                                    <a href="sponsor_management-home.html">Sponsor Managment</a>
                                 </li>
                                 <li>
-                                    Add Coupon
+                                    Add Sponsor
                                 </li>
                             </ul>
                             <!-- END BREADCRUMB -->
@@ -339,62 +339,92 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <form role="form">
-                                        <div class="form-group form-group-default required">
-                                            <label>Name</label>
-                                            <input type="text" class="form-control" required="true" placeholder="Coupon Name">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Belong to product ID</label>
-                                            <input type="text" class="form-control" required="true" placeholder="Product ID">
-                                        </div>
-                                        <div class="form-group form-group-default">
-                                            <label>Product Original Price</label> $12.99
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Produce Coupon Price</label>
-                                            <input type="text" class="form-control" required="true" placeholder="$">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Coupon Value</label>
-                                            <input type="text" class="form-control" required="true" placeholder="$">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Description</label>
-                                            <textarea style="width: 100%; border-color: #f3f3f3" rows="5" placeholder="Coupon description"></textarea>
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Total Quantity</label>
-                                            <input type="text" class="form-control" required="true" placeholder="How many coupons you need issue">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Start Date - Expire Date</label>
-                                            <div class="input-prepend input-group required">
-
-                                                <span class="add-on input-group-addon">
-                                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                                        </span>
-                                                <input type="text" style="width: 100%" name="reservation" id="daterangepicker" class="form-control" value="01/01/2017 00:00 PM - 01/01/2017 00:00 PM" />
+                                    <form role="form" class="form-my">
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">
+                                                <label class="required">Shopper ID:</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="form-group input-group search required" style="margin-bottom: 0">
+                                                    <input type="text" class="form-control" placeholder="Shopper ID">
+                                                    <span class="input-group-addon">
+                                                    <i class="fa fa-search"></i>
+                                                </span>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <br>
-                                        <div class="form-group form-group-default required">
-                                            <label>Coupon Status</label>
-                                            <select>
-                                            <option value="sightseeing">Available</option>
-                                            <option value="business">Not Available</option>
-                                        </select>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">Name:</div>
+                                            <div class="col-sm-9">ABC Toy</div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">Shopper Name:</div>
+                                            <div class="col-sm-9">487 abc road, port coquitlam, B.C. Canada</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">Shopper Tel:</div>
+                                            <div class="col-sm-9">6046499112</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">
+                                                <label class="required">Event ID:</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="form-group input-group search required" style="margin-bottom: 0">
+                                                    <input type="text" class="form-control" placeholder="Event ID:">
+                                                    <span class="input-group-addon">
+                                                    <i class="fa fa-search"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">Event Title:</div>
+                                            <div class="col-sm-9">Iphone 7 64GB Bargarn</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">Event start Date:</div>
+                                            <div class="col-sm-9">2017/05/01 10:00AM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">Event expire Date:</div>
+                                            <div class="col-sm-9">2017/05/01 11:00PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">
+                                                <label class="required">Sponsor Level:</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <select>
+                                                <option value="golden">Golden</option>
+                                                <option value="silver">Silver</option>
+                                                <option value="borzon">Borzon</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3 text-right">
+                                                <label class="required">Ads Text:</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div style="position: relative">
+                                                    <textarea id="ads_text_input-js" cols="30" rows="1" style="width: 100%"></textarea>
+                                                    <span class="limit-js"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
                                         <div class="text-right">
-                                            <button class="btn btn-primary btn-cons">+ Add Coupon</button>
+                                            <button class="btn btn-primary btn-cons">+ Add Sponsor</button>
                                         </div>
                                     </form>
 
                                 </div>
+                                <div class="col-md-6">
+                                </div>
                             </div>
                         </div>
+
                     </div>
                     <!-- END PLACE PAGE CONTENT HERE -->
                 </div>
