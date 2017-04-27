@@ -64,7 +64,7 @@
                     </a>
                     <span class="icon-thumbnail "><i class="fa fa-th-large"></i></span>
                     <ul class="sub-menu">
-                        <li class="">
+                        <li class="active">
                             <a href="lower_the_price-event-home.html">Lower the price</a>
                         </li>
                     </ul>
@@ -75,11 +75,11 @@
                     </a>
                     <span class="icon-thumbnail "><i class="fa fa-gear"></i></span>
                     <ul class="sub-menu">
-                        <li class="active">
+                        <li>
                             <a href="index.html">Shopper Managment</a>
                         </li>
                         <li>
-                            <a href="product_management-home.html">Product Managment</a>
+                            <a href="coupon_management-home.html">Product Managment</a>
                         </li>
                         <li>
                             <a href="coupon_management-home.html">Coupon Managment</a>
@@ -319,14 +319,14 @@
                 <div class="jumbotron" data-pages="parallax">
                     <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
                         <div class="inner">
-                            <h3 class="page-title">Shopper Managment</h3>
+                            <h3 class="page-title">Lower the price</h3>
                             <!-- START BREADCRUMB -->
                             <ul class="breadcrumb">
                                 <li>
-                                    <a href="index.html">Shopper Managment</a>
+                                    <a href="lower_the_price-event-home.html">Lower the price</a>
                                 </li>
                                 <li>
-                                    Edit Shopper
+                                    Joined user
                                 </li>
                             </ul>
                             <!-- END BREADCRUMB -->
@@ -341,82 +341,135 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <form role="form">
-                                        <div class="upload-logo">
-                                            <p>
-                                                <img src="../assets/img/profiles/4x.jpg" width="177" height="177" alt="">
-                                            </p>
-                                            <p>
-                                                <button class="btn btn-primary btn-cons">Update Logo</button>
-                                            </p>
-                                            <br>
+                                    <form role="form" class="form-my">
+                                        <div class="row">
+                                            <div class="col-sm-2 text-right">
+                                                <label class="required">User ID:</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <div class="form-group input-group search required" style="margin-bottom: 0">
+                                                    <input type="text" class="form-control" placeholder="User ID">
+                                                    <span class="input-group-addon">
+                                                    <i class="fa fa-search"></i>
+                                                </span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Name</label>
-                                            <input type="text" class="form-control" required="true" placeholder="Business Name">
+                                        <div class="text-center">
+                                            <div class="thumbnail-wrapper d78 circular bordered b-white">
+                                                <img alt="Avatar" width="55" height="55" src="assets/img/profiles/5.jpg">
+                                            </div>
+                                            <div>
+                                                Nick name
+                                            </div>
                                         </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Telephone</label>
-                                            <input type="text" id="phone" class="form-control" placeholder="Business Tel Number">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Email</label>
-                                            <input type="email" class="form-control" placeholder="Business Email" required="">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Website</label>
-                                            <input type="text" class="form-control" placeholder="Business Website" required="">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Address</label>
-                                            <input type="text" class="form-control" placeholder="Business Address" required="">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>City</label>
-                                            <input type="text" class="form-control" placeholder="City" required="">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Province</label>
-                                            <input type="text" class="form-control" placeholder="Province" required="">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Country</label>
-                                            <input class="typeahead form-control sample-typehead" type="text" placeholder="Country">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Post Code</label>
-                                            <input type="text" class="form-control" placeholder="Post Code" required="">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Description</label>
-                                            <textarea style="width: 100%; border-color: #f3f3f3" rows="5" placeholder="Business description"></textarea>
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Contact Person</label>
-                                            <input type="text" class="form-control" required="true" placeholder="First Name Last Name">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Contact Person Title</label>
-                                            <input type="text" class="form-control" required="true" placeholder="Title">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Contact Person Tel</label>
-                                            <input type="text" id="phone" class="form-control" placeholder="Contact Tel">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <label>Contact Person Email</label>
-                                            <input type="email" class="form-control" placeholder="Contact Email" required="">
-                                        </div>
-                                        <div class="form-group form-group-default required">
-                                            <select>
-                                            <option value="sightseeing">Available</option>
-                                            <option value="business">Not Available</option>
-                                        </select>
-                                        </div>
-                                        <div class="text-right">
-                                            <button class="btn btn-primary btn-cons">Update</button>
+
+                                        <div class="row">
+                                            <div class="col-sm-12 text-right">
+                                                <button class="btn btn-primary btn-cons">+ Add User</button>
+                                            </div>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:20%">User ID</th>
+                                            <th style="width:18%">User Icon</th>
+                                            <th style="width:14%">Get Coupon</th>
+                                            <th style="width:14%">Coupon Redeemed?</th>
+                                            <th style="width:14%">Is Robot</th>
+                                            <th style="width:20%">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>8292929891</td>
+                                            <td>
+                                                <span class="thumbnail-wrapper d32 circular inline">
+                                            <img src="assets/img/profiles/1.jpg" alt="" width="32" height="32">
+                                        </span>
+                                            </td>
+                                            <td>
+                                                yes
+                                            </td>
+                                            <td>
+                                                yes
+                                            </td>
+                                            <td>
+                                                no
+                                            </td>
+                                            <td class="v-align-middle">
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>94993847327</td>
+                                            <td>
+                                                <span class="thumbnail-wrapper d32 circular inline">
+                                            <img src="assets/img/profiles/2.jpg" alt="" width="32" height="32">
+                                        </span>
+                                            </td>
+                                            <td>
+                                                no
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                no
+                                            </td>
+                                            <td class="v-align-middle">
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4382903485930</td>
+                                            <td>
+                                                <span class="thumbnail-wrapper d32 circular inline">
+                                            <img src="assets/img/profiles/3.jpg" alt="" width="32" height="32">
+                                        </span>
+                                            </td>
+                                            <td>
+                                                yes
+                                            </td>
+                                            <td>
+                                                no
+                                            </td>
+                                            <td>
+                                                yes
+                                            </td>
+                                            <td class="v-align-middle">
+                                                <a href="lower_the_price-joined_user-s.html" class="btn">
+                                            Setup
+                                        </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-right">
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">6 <span class="sr-only">(current)</span></a></li>
+                                            <li>
+                                                <a href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>

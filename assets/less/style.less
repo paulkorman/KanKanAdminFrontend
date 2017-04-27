@@ -35,6 +35,23 @@
   text-align: center;
 }
 
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
 .row-my {
   .col-5 {
     width: 20%;
@@ -66,11 +83,12 @@
   }
 }
 
-.label.required:after {
+label.required:after {
   color: #f55753;
   content: "*";
   font-family: arial;
   font-size: 20px;
+  padding-left: 6px;
 }
 
 span.limit-js {
@@ -79,3 +97,12 @@ span.limit-js {
   top: 2px;
   right: 10px;
 }
+
+.thumbnail-wrapper.bordered.d78 {
+  width: 100px;
+  height: 100px;
+  float: none;
+  display: inline-block;
+}
+
+
